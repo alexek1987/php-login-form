@@ -4,16 +4,20 @@ const email_repeated = document.getElementById('email_repeated')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
 
-
 form.addEventListener('submit', (e) => {
   let messages = []
-  if (email.value === '' || email.value === null) {
-    messages.push('Email cant be blank')
+
+  if (email.value == '' || email.value === null || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1)
+  {
+    messages.push('You have entered an invalid email format')
   }
-  else if (email != email_repeated)
+
+  if (email.value != email_repeated.value)  {
     messages.push('Emails do not match')
+  }
+
   if (messages.length > 0){
     e.preventDefault()
     errorElement.innerText = messages.join (', ')
   }
-})
+});
