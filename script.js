@@ -13,21 +13,19 @@ form.addEventListener('submit', (e) => {
     messages.push('Email cannot be blank')
   }
 
+  else if (regexEmail.test(email.value)) {
+  } else {
+    alert("Mmh 🤔 seems like you didn't enter a valid email. ")
+    e.preventDefault()
+  }
+
   if (email.value != email_repeated.value)  {
     messages.push('Emails do not match')
   }
 
-  if (messages.length > 0){
+  if (messages.length > 0) {
     e.preventDefault()
     errorElement.innerText = messages.join (', ')
   }
-
-
-  if (regexEmail.test(email.value)) {
-   messages.push("Nice Email but")
-  } else {
-      alert("Mmh 🤔 seems like you didn't enter a valid email. ")
-      e.preventDefault()
-    }
 });
 
