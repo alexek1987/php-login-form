@@ -7,9 +7,13 @@ const errorElement = document.getElementById('error')
 form.addEventListener('submit', (e) => {
   let messages = []
 
-  if (email.value == '' || email.value === null || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1)
+  if (email.value == '' || email.value === null)
   {
-    messages.push('You have entered an invalid email format')
+    messages.push('Email cannot be blank')
+  }
+
+  if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
+    messages.push('Invalid Email format')
   }
 
   if (email.value != email_repeated.value)  {
