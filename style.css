@@ -43,7 +43,7 @@ body{
   border-radius: 2px;
   width: 100%;
   color: white;
-  background-color:#44974C;
+  background-color:#1877F2;
   height: 50px;
   margin-top: 10px;
 }
@@ -51,4 +51,9 @@ body{
 .form-container button:hover {
   opacity: 0.9;
   border: 1px solid black;
+}
+
+#error {
+  font-size: 15px;
+  color: red;
 }
