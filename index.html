@@ -7,23 +7,22 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Sign up form</title>
+  <script defer src="script.js"></script>
 </head>
 <body>
-
+  <div id="error"></div>
   <div class="page-container">
-
     <h1>Sign up</h1>
-
     <div class="form-container">
-      <form action="form.php" method="POST">
+      <form action="form.php" method="POST" id="form">
         <h5>Full name</h5>
         <input type="text" name="full_name">
 
         <h5>Email</h5>
-        <input type="text" name="email">
+        <input type="text" name="email" id="email">
 
         <h5>Confirm Email</h5>
-        <input type="text" name="email_repeated">
+        <input type="text" name="email_repeated" id="email_repeated">
 
         <h5>Country</h5>
         <select id="country" name="country">
@@ -31,7 +30,6 @@
         </select>
 
         <h5>Language</h5>
-
         <select id="language" name="language" >
           <option >Please select</option>
         </select>
