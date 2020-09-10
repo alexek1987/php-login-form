@@ -19,11 +19,13 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
   }
 
-  if (email.value != email_repeated.value)  {
+  if (email.value != email_repeated.value)
+  {
     messages.push('Emails do not match')
   }
 
-  if (messages.length > 0) {
+  if (messages.length > 0)
+  {
     e.preventDefault()
     errorElement.innerText = messages.join (', ')
   }
