@@ -3,6 +3,7 @@ const email = document.getElementById('email')
 const email_repeated = document.getElementById('email_repeated')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
+var regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
 form.addEventListener('submit', (e) => {
   let messages = []
@@ -10,10 +11,6 @@ form.addEventListener('submit', (e) => {
   if (email.value == '' || email.value === null)
   {
     messages.push('Email cannot be blank')
-  }
-
-  if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
-    messages.push('Invalid Email format')
   }
 
   if (email.value != email_repeated.value)  {
@@ -24,4 +21,13 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     errorElement.innerText = messages.join (', ')
   }
+
+
+  if (regexEmail.test(email.value)) {
+   messages.push("Nice Email")
+  } else {
+      alert("Mmh 🤔 seems like you didn't enter a valid email. ")
+      e.preventDefault()
+    }
 });
+
