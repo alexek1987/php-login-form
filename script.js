@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
 
 
   if (regexEmail.test(email.value)) {
-   messages.push("Nice Email")
+   messages.push("Nice Email but")
   } else {
       alert("Mmh 🤔 seems like you didn't enter a valid email. ")
       e.preventDefault()
