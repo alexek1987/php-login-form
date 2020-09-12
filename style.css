@@ -3,6 +3,7 @@ body{
   font-family:  'Roboto', sans-serif;
 }
 
+
 .page-container {
   height: 100vh;
   display: flex;
@@ -58,3 +59,48 @@ body{
   font-size: 15px;
   color: red;
 }
+
+.custom-alert-success {
+  border: 2px solid #1EDD88;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+  width: 330px;
+  height: 20px;
+}
+
+.custom-alert-warning {
+  border: 2px solid #FFC65A;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+  width: 642px;
+  height: 20px;
+}
+
+.custom-alert-danger {
+  border: 2px solid #FD1015;
+  padding: 16px 24px;
+  display: flex;
+  align-content:center;
+  margin-top: 30%;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+  width: 510px;
+  height: 20px;
+}
+

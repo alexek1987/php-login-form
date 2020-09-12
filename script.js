@@ -1,4 +1,3 @@
-
 const email = document.getElementById('email')
 const email_repeated = document.getElementById('email_repeated')
 const form = document.getElementById('form')
@@ -15,7 +14,7 @@ form.addEventListener('submit', (e) => {
 
   else if (regexEmail.test(email.value)) {
   } else {
-    alert("Mmh 🤔 seems like you didn't enter a valid email. ")
+    alert("Mmh 🤔 seems like you didn't enter a valid email.")
     e.preventDefault()
   }
 
