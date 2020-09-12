@@ -54,7 +54,7 @@
       } else {
         echo "
         <div class=custom-alert-danger>
-          <h5>Oops! 😱 a problem has occurred: Passwords are not identical, watch it sausage fingers! </h5>
+          <h5>Oops! 😱 a problem has occurred: Passwords are not identical, watch it sausage fin </h5>
         </div>
         ";
       }

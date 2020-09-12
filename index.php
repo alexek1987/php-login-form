@@ -43,9 +43,6 @@
         <div id="error"></div>
       </form>
     </div>
-  </div>
-</body>
-</html>
 
 <?php
   $upper_case = "ABCDEFGHIKLMNOPQRSTVXYZ";
@@ -93,31 +90,36 @@
         } else {
           echo "
           <div class=custom-alert-danger>
-            <h5> Oops! 😱 a problem has occurred: Password must contain at least 10 characters</h5>
+            <h5> Oops! 😱 a problem has occurred: password must contain at least 10 characters</h5>
            </div>
           ";
         }
       } else {
         echo "
         <div class=custom-alert-danger>
-          <h5>Oops! 😱 a problem has occurred: Passwords are not identical, watch it sausage fingers! </h5>
+          <h5>Oops! 😱 a problem has occurred: passwords are not identical, watch it sausage fingers! </h5>
         </div>
         ";
       }
     } else {
       echo "
       <div class=custom-alert-danger>
-        <h5>Oops! 😱 a problem has occurred: Please fill in all the fields </h5>
+        <h5>Oops! 😱 a problem has occurred: please fill in all the fields </h5>
       </div>
       ";
     }
   } else {
     echo "
     <div class=custom-alert-danger>
-      <h5>Oops! 😱 a problem has occurred: Wrong data passed. </h5>
+      <h5>Oops! 😱 a problem has occurred: wrong data passed. </h5>
     </div>
     ";
   }
  ?>
 
+
+
+  </div>
+</body>
+</html>
 
