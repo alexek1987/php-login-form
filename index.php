@@ -12,8 +12,8 @@
 <body>
   <div class="form-validation-container">
     <?php
-    $upper_case = "ABCDEFGHIKLMNOPQRSTVXYZ";
-    $lower_case = "abcdefghiklmnopqrstvxyz";
+    $upper_case = " ABCDEFGHIKLMNOPQRSTVXYZ";
+    $lower_case = " abcdefghiklmnopqrstvxyz";
     $digit = " 1234567890";
     $special_characters = " !?@#$%^&*.+=-";
 
@@ -89,7 +89,7 @@
     <div class="form-container">
       <form action="" method="POST" id="form">
         <h5>Full name</h5>
-        <input type="text" name="full_name">
+        <input type="text" name="full_name" required>
 
         <h5>Email</h5>
         <input type="text" name="email" id="email">
