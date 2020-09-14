@@ -43,42 +43,42 @@
             }
             if($upper_case_score !=0 && $lower_case_score !=0 && $digit_score !=0 && $special_characters_score !=0) {
               echo "
-              <div class=custom-alert-success>
+              <div class="/custom-alert-success/">
               <h5>Yay! 🎉 you successfully signed in to our service.</h5>
               </div>
               <script>location.href='application.php';</script>;
               ";
             } else {
               echo "
-              <div class=custom-alert-warning>
+              <div class='custom-alert-warning/''>
               <h5>Mmh 🤔 seems like you didn't include at least one uppercase letter, lowercase letter, digit and symbol! </h5>
               </div>
               ";
             }
           } else {
             echo "
-            <div class=custom-alert-danger>
+            <div class='custom-alert-danger'>
             <h5> Oops! 😱 a problem has occurred: password must contain at least 10 characters! </h5>
             </div>
             ";
           }
         } else {
           echo "
-          <div class=custom-alert-danger>
+          <div class='custom-alert-danger';>
           <h5>Oops! 😱 a problem has occurred: passwords are not identical, watch it sausage fingers! </h5>
           </div>
           ";
         }
       } else {
         echo "
-        <div class=custom-alert-danger>
+        <div class='custom-alert-danger'>
         <h5>Oops! 😱 a problem has occurred: please fill in all the fields! </h5>
         </div>
         ";
       }
     } else {
       echo "
-      <div class=custom-alert-danger>
+      <div class='custom-alert-danger'>
       <h5>Oops! 😱 a problem has occurred: wrong data passed. You better check yourself! </h5>
       </div>
       ";
