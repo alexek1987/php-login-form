@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
 
   if (email.value == '' || email.value === null)
   {
-    messages.push('Email cannot be blank')
+    messages.push("Email cannot be blank")
   }
 
   else if (regexEmail.test(email.value)) {
@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
 
   if (email.value != email_repeated.value)
   {
-    messages.push('Emails do not match')
+    messages.push("Emails do not match")
   }
 
   if (messages.length > 0)
