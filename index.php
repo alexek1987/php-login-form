@@ -46,6 +46,7 @@
               <div class=custom-alert-success>
               <h5>Yay! 🎉 you successfully signed in to our service.</h5>
               </div>
+              <script>location.href='application.php';</script>;
               ";
             } else {
               echo "
