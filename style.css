@@ -70,26 +70,25 @@ body{
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
   border-radius: 4px;
   margin: 8px;
+  height: 20px;
 
 }
 
 .success {
   border: 2px solid #1EDD88;
   width: 330px;
-  height: 20px;
 
 }
 
 .warning {
   border: 2px solid #FFC65A;
   width: 642px;
-  height: 20px;
+
 }
 
 .danger {
   border: 2px solid #FD1015;
   width: 510px;
-  height: 20px;
 }
 
 
