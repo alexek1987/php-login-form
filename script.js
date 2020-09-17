@@ -1,11 +1,11 @@
-const email = document.getElementById('email')
-const email_repeated = document.getElementById('email_repeated')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
+var email = document.getElementById('email')
+var email_repeated = document.getElementById('email_repeated')
+var form = document.getElementById('form')
+var errorElement = document.getElementById('error')
 var regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
 form.addEventListener('submit', (e) => {
-  let messages = []
+  var messages = []
 
   if (email.value == '' || email.value === null)
   {
